@@ -33,7 +33,11 @@ public class ArticuloAlimenticio extends Articulo {
         this.diasParaVencimiento = diasParaVencimiento;
     }
 
-    
+    @Override
+    public String getDetalleEspecifico(){
+        return "";
+    }
+
 
     @Override
     public String getTipoArticulo() {
@@ -45,13 +49,9 @@ public class ArticuloAlimenticio extends Articulo {
        return getPrecio() + (diasParaVencimiento < 5 ? -getPrecio() * 0.2 : 0);
     }
 
-
-
     public int getDiasParaVencimiento() {
         return diasParaVencimiento;
     }
-
-
 
     public void setDiasParaVencimiento(int diasParaVencimiento) {
         this.diasParaVencimiento = diasParaVencimiento;

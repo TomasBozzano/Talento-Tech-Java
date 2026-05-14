@@ -62,6 +62,8 @@ public abstract class Articulo implements Calculable, Identificable {
 
     public abstract String getTipoArticulo();
 
+    public abstract String getDetalleEspecifico();
+
     @Override
     public int getCodigo() {
         return codigo;
@@ -100,7 +102,9 @@ public abstract class Articulo implements Calculable, Identificable {
         return "Articulo {codigo=" + codigo + 
                         ", nombre=" + nombre + 
                         ", precio=" + precio + 
-                        ", categoria: " + categoria.toString()
+                        ", tipo: " + getTipoArticulo() +
+                        ", precio final: " + calcularPrecioFinal()+
+                        ", " + categoria.toString()
                 + "}";
     }
 }

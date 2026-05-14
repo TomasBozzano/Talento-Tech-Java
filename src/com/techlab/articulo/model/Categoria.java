@@ -64,9 +64,9 @@ public class Categoria implements Identificable {
 
     @Override
     public String toString() {
-        return "Categoria {codigo=" + codigo + 
-                        ", nombre=" + nombre + 
-                        ", descripcion=" + descripcion + 
+        return "Categoria: { codigo:" + codigo + 
+                        ", nombre:" + nombre + 
+                        ", descripcion:" + descripcion + 
                 "}";
     }
 }

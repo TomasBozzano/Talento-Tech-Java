@@ -38,6 +38,13 @@ public class ArticuloElectronico extends Articulo {
     }
 
     @Override
+    public String getDetalleEspecifico() {
+        return "";
+    }
+
+
+
+    @Override
     public String getTipoArticulo() {
         return "Electrónico";
     }
